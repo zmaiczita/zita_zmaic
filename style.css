@@ -1,0 +1,126 @@
+/* OPĆE POSTAVKE */
+body {
+    margin: 0;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f6f7f4; /* svijetla olive pozadina */
+    color: #2f3e2e; /* tamna olive za tekst */
+    line-height: 1.7;
+}
+
+/* NAVIGACIJA */
+nav {
+    background-color: #e3e7df;
+    border-bottom: 1px solid #c9d0c3;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3a4b3a;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* SADRŽAJ STRANICE */
+.container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* NASLOVI */
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* TEKST */
+p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* SLIKE */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #8a9a5b; /* olive accent */
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+h2 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #8a9a5b;
+    display: block;
+    margin-top: 10px;
+}
+hr {
+    border: none;
+    border-top: 1px solid #e0e4dc;
+    margin: 40px 0;
+}
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7b65;
+    margin: 40px 0 20px;
+}
